@@ -1,0 +1,6 @@
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+package net.minecraft.network.handshake;
+
+import warcode0x.MethodsReturnNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;

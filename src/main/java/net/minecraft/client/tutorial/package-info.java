@@ -1,0 +1,6 @@
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+package net.minecraft.client.tutorial;
+
+import warcode0x.MethodsReturnNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;

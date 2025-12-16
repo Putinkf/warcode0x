@@ -1,0 +1,6 @@
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+package com.mojang.realmsclient.util;
+
+import warcode0x.MethodsReturnNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;

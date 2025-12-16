@@ -1,0 +1,6 @@
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+package net.minecraft.item.crafting;
+
+import warcode0x.MethodsReturnNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;

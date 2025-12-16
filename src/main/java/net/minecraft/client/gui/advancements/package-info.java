@@ -1,0 +1,6 @@
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
+package net.minecraft.client.gui.advancements;
+
+import warcode0x.MethodsReturnNonnullByDefault;
+import javax.annotation.ParametersAreNonnullByDefault;

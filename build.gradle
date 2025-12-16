@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.warcode0x'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    // Для возможных Forge-библиотек через JitPack
+    maven { url 'https://jitpack.io' }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_18
+    targetCompatibility = JavaVersion.VERSION_18
+}
+
+
+dependencies {
+    // Подключаем все jar из папки libraries
+    implementation fileTree(dir: 'libraries', include: ['*.jar'])
+}
+
+application {
+    mainClass = 'warcode0x.client.Main'
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    // Для совместимости с Java 17
+    options.release = 17
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// Задача для запуска клиента через Gradle
+task runClient(type: JavaExec) {
+    group = "Warcode"
+    description = "Запускает клиент Warcode"
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'warcode0x.client.Main'
+    args '--gameDir', '.'
+    workingDir = file('run')
+}

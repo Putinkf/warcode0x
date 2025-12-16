@@ -1,0 +1,6 @@
+# Добавление файла в .gitignore
+echo "saves/New World/session.lock" >> .gitignore
+
+# Если в будущем могут появиться другие файлы .lock в этой папке,
+# можно добавить и маску:
+echo "saves/New World/*.lock" >> .gitignore
